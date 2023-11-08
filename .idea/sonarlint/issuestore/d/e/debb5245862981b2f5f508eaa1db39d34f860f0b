@@ -1,0 +1,7 @@
+
+@
+java:S1197"*Move the array designators [] to the type.(ëì¯‰
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(•©Ö€ıÿÿÿÿ8…Šá»0
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’®Äüÿÿÿÿ
+{
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÿ¯œÇøÿÿÿÿ8€ãá»0
