@@ -3,7 +3,7 @@ package com.practice.string_problem;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindDuplicateString {
+public class FindDuplicateCharacter {
     public static void main(String[] args) {
         String str="laptop";
         char[] arrChar = str.toCharArray();
