@@ -15,10 +15,16 @@ public class RepeatedWordCount {
 
         // Use a HashMap to store the count of each word
         Map<String, Integer> wordCountMap = new HashMap<>();
+        int count=1;
 
         // Iterate through the array of words
         for (String word : words) {
             wordCountMap.put(word, wordCountMap.getOrDefault(word, 0) + 1);
+//            if(!wordCountMap.containsKey(word)){
+//                wordCountMap.put(word,count);
+//            }else{
+//                wordCountMap.put(word,wordCountMap.get(word)+1);
+//            }
         }
 
         // Print out the repeated words and their counts
