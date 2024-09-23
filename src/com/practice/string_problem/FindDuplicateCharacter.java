@@ -6,6 +6,8 @@ import java.util.Map;
 public class FindDuplicateCharacter {
     public static void main(String[] args) {
         String str="laptop";
+        String str1="hello from the world hello";
+        System.out.println("Normal method:"+ freqOfStr(str1));
         char[] arrChar = str.toCharArray();
         int count=1;
 
@@ -23,6 +25,18 @@ public class FindDuplicateCharacter {
             if(map.get(character)>1)
                 System.out.println(character + ":" + map.get(character));
         }
+    }
+
+    public static Map<String,Integer> freqOfStr(String input){
+        Map<String,Integer> map = new HashMap<>();
+        for (String ch:input.split(" ")){
+            if(map.containsKey(ch)){
+                map.put(ch, map.get(ch)+1);
+            }else{
+                map.put(ch,1);
+            }
+        }
+        return map;
     }
 
 }

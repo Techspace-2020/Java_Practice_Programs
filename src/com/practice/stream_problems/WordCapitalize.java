@@ -11,6 +11,7 @@ public class WordCapitalize {
     public static void main(String[] args) {
         String str = "hello world from the interpreter";
         String[] words = str.split(" ");
+        //System.out.println(words);
 
         //System.out.println(str.substring(str.length()-1, str.length()));
         //final String collect = Arrays.stream(words).map(word -> word.substring(0,1).toUpperCase().concat(word.substring(1))).collect(Collectors.joining(" "));
@@ -62,7 +63,7 @@ public class WordCapitalize {
 
         //System.out.println(nums.stream().count());
 
-        IntStream.rangeClosed(1,10).forEach(System.out::println);
+        //IntStream.rangeClosed(1,10).forEach(System.out::println);
 
         final double avg = nums.stream().mapToInt(a -> a).average().getAsDouble();
 
